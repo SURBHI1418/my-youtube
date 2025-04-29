@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .accordion-sidebar {
+    @apply font-bold pt-5 cursor-pointer;
+  }
+  .ul-li-pointor {
+    @apply cursor-pointer;
+  }
+  .ul-li-design {
+    @apply flex items-center gap-2 whitespace-nowrap;
+  }
+  .buttonlist {
+    @apply px-5 py-1 m-5 bg-gray-200 rounded-lg hover:bg-black hover:text-white;
+  }
+}
