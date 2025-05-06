@@ -14,9 +14,9 @@ const VideoPlayer = () => {
     setVideos(json.items);
   };
   return (
-    <div className="flex flex-wrap">
+    <div className="flex flex-wrap  ">
       {videos.map((video) => (
-        <Link to={"/watch?v=" + video.id} className="p-2 m-2 w-[18%] shadow-lg">
+        <Link to={"/watch?v=" + video.id} className="p-2 m-2 w-[100%] shadow-lg  hover:bg-gray-300 md:w-[30%] lg:w-[30%]">
           <VideoCard
             key={video.id}
             info={video}

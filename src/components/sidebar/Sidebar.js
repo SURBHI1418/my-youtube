@@ -33,10 +33,7 @@ const Sidebar = () => {
         <h1 className="accordion-sidebar ul-li-design ">
           {" "}
           <House />
-          <Link to="/">
-
-          Home
-          </Link>
+          <Link to="/">Home</Link>
         </h1>
         <ul className="border-b-2 ">
           <li className="ul-li-design">

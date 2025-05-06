@@ -8,9 +8,11 @@
   }
   .ul-li-pointor {
     @apply cursor-pointer;
+    
   }
   .ul-li-design {
     @apply flex items-center gap-2 whitespace-nowrap;
+    @apply hover:bg-gray-300 ;
   }
   .buttonlist {
     @apply px-5 py-1 m-5 bg-gray-200 rounded-lg hover:bg-black hover:text-white;
