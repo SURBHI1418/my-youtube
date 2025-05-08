@@ -4,3 +4,144 @@ export const YOUTUBE_VIDEO_API =
 
   export const YOUTUBE_SEARCH_API=
   "http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q="
+
+
+  export const CommentData=
+  [
+    {
+    name: "Surbhi Kumari",
+    text: "The idea of making youtube is great with the feature of nested comments",
+    replies:[
+      
+        {
+            name: "Surbhi Kumari",
+            text: "The idea of making youtube is great with the feature of nested comments",
+            replies:[
+              {
+                  
+              }
+            ]
+          },
+          {
+            name: "Surbhi Kumari",
+            text: "The idea of making youtube is great with the feature of nested comments",
+            replies:[
+                {
+                    name: "Surbhi Kumari",
+                    text: "The idea of making youtube is great with the feature of nested comments",
+                    replies:[
+                      {
+                          
+                      }
+                    ]
+                  },
+                  {
+                    name: "Surbhi Kumari",
+                    text: "The idea of making youtube is great with the feature of nested comments",
+                    replies:[
+                      {
+                          
+                      }
+                    ]
+                  },
+                  {
+                    name: "Surbhi Kumari",
+                    text: "The idea of making youtube is great with the feature of nested comments",
+                    replies:[
+                        {
+                            name: "Surbhi Kumari",
+                            text: "The idea of making youtube is great with the feature of nested comments",
+                            replies:[
+                              {
+                                  
+                              }
+                            ]
+                          },
+                          {
+                            name: "Surbhi Kumari",
+                            text: "The idea of making youtube is great with the feature of nested comments",
+                            replies:[
+                                {
+                                    name: "Surbhi Kumari",
+                                    text: "The idea of making youtube is great with the feature of nested comments",
+                                    replies:[
+                                      {
+                                          
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    name: "Surbhi Kumari",
+                                    text: "The idea of making youtube is great with the feature of nested comments",
+                                    replies:[
+                                      {
+                                          
+                                      }
+                                    ]
+                                  },
+                            ]
+                          },
+                    ]
+                  },
+            ]
+          },
+          {
+            name: "Surbhi Kumari",
+            text: "The idea of making youtube is great with the feature of nested comments",
+            replies:[
+              {
+                  
+              }
+            ]
+          },
+          {
+            name: "Surbhi Kumari",
+            text: "The idea of making youtube is great with the feature of nested comments",
+            replies:[
+              {
+                  
+              }
+            ]
+          },
+          
+      
+    ]
+  },
+  {
+    name: "Surbhi Kumari",
+    text: "The idea of making youtube is great with the feature of nested comments",
+    replies:[
+      {
+          
+      }
+    ]
+  },
+  {
+    name: "Surbhi Kumari",
+    text: "The idea of making youtube is great with the feature of nested comments",
+    replies:[
+      {
+          
+      }
+    ]
+  },
+  {
+    name: "Surbhi Kumari",
+    text: "The idea of making youtube is great with the feature of nested comments",
+    replies:[
+      {
+          
+      }
+    ]
+  },
+  {
+    name: "Surbhi Kumari",
+    text: "The idea of making youtube is great with the feature of nested comments",
+    replies:[
+      {
+          
+      }
+    ]
+  },
+  ];
+
