@@ -14,6 +14,11 @@ const Head = () => {
   const dispatch = useDispatch();
   const [showSuggestion, setShowSuggestion] = useState(false);
 
+  const handleSuggestionClick = (selectedQuery) => {
+    setSearchQuery(selectedQuery);
+    setShowSuggestion(false);
+  };
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -35,8 +40,7 @@ const Head = () => {
     };
   }, []);
 
-  const serachCache= useSelector(store=> store.search);
-
+  const serachCache = useSelector((store) => store.search);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -55,15 +59,17 @@ const Head = () => {
   }, [searchQuery]);
 
   const getSearchSuggestion = async () => {
-    console.log("API CALL - "+searchQuery);
+    console.log("API CALL - " + searchQuery);
     const data = await fetch(YOUTUBE_SEARCH_API + searchQuery);
     const json = await data.json();
     setSearchSuggestion(json[1]);
 
     //update Cache
-    dispatch(cacheResults({
-      [searchQuery]:json[1]
-    }));
+    dispatch(
+      cacheResults({
+        [searchQuery]: json[1],
+      })
+    );
   };
 
   const togglerMenuHandler = () => {
@@ -99,7 +105,12 @@ const Head = () => {
         <button className="border border-gray-400 p-2 rounded-r-full absolute">
           <Search className=" " />
         </button>
-        {showSuggestion && <SearchResult suggestions={searhSuggestion} />}
+        {showSuggestion && (
+          <SearchResult
+            suggestions={searhSuggestion}
+            onSuggestionClick={handleSuggestionClick}
+          />
+        )}
       </div>
       <div className="col-span-1">
         <CircleUserRound />
