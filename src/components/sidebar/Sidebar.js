@@ -22,11 +22,24 @@ import {
 } from "lucide-react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { closeMenu } from "../../utils/appSlice";
 
 const Sidebar = () => {
   const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
+    const dispatch = useDispatch();
+
+
+
+   useEffect(() => {
+    if (window.innerWidth < 768) {
+      dispatch(closeMenu());
+    }
+  }, [dispatch]);
   // Early Return Pattern
   if (!isMenuOpen) return null;
+  
   return (
     <div className="p-8 shadow-lg col-span-1 ">
       <div className="ul-li-pointor">

@@ -16,11 +16,11 @@ const VideoPlayer = () => {
   return (
     <div className="flex flex-wrap  ">
       {videos.map((video) => (
-        <Link to={"/watch?v=" + video.id} className="p-2 m-2 w-[100%] shadow-lg  hover:bg-gray-300 md:w-[30%] lg:w-[30%]">
-          <VideoCard
-            key={video.id}
-            info={video}
-          />
+        <Link
+          to={"/watch?v=" + video.id}
+          className="p-2 m-2 w-[100%] shadow-lg  hover:bg-gray-300 md:w-[30%] lg:w-[20%]"
+        >
+          <VideoCard key={video.id} info={video} />
         </Link>
       ))}
     </div>

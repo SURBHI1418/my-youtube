@@ -23,9 +23,12 @@ const LiveChat = () => {
   }, []);
 
   return (
-    <div className="h-[500px] ml-2 p-2 w-full border border-black rounded-lg flex flex-col ">
-      <div className="h-[50px] w-full bg-white p-2">Top Chat</div>
-      <div className="bg-slate-100 w-full flex-1 overflow-y-auto flex flex-col-reverse">
+    // <div className="lg:h-[510px]  ml-2 p-2 lg:w-[150%] border border-black rounded-lg flex flex-col   ">
+    //   <div className="h-[50px] w-full bg-white p-2">Top Chat</div>
+    //   <div className="bg-slate-100 w-full flex-1 overflow-y-auto flex flex-col-reverse">
+    <div className="h-full p-2 border border-black rounded-lg flex flex-col">
+      <div className="h-[50px] bg-white p-2">Top Chat</div>
+      <div className="bg-slate-100 flex-1 overflow-y-auto flex flex-col-reverse">
         {chatMessages.map((c, i) => (
           <ChatMessage key={i} name={c.name} message={c.message} />
         ))}
